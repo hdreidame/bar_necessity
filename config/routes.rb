@@ -1,4 +1,12 @@
 BarNecessity::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/order"
+
+  get "pages/payment"
+
+  get "pages/receipt"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
