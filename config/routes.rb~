@@ -1,11 +1,10 @@
 BarNecessity::Application.routes.draw do
+  get "home/show"
+
   match '/order', :to => 'pages#order'
   match '/payment', :to => 'pages#payment'
   match '/receipt', :to=> 'pages#receipt'
   match '/signup', :to => 'pages#signup'
-
-
-  match '/', :to => 'pages#home'
 
   root :to => 'pages#home'
 

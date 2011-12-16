@@ -1,10 +1,12 @@
 BarNecessity::Application.routes.draw do
+  get "home/show"
+
   match '/order', :to => 'pages#order'
   match '/payment', :to => 'pages#payment'
   match '/receipt', :to=> 'pages#receipt'
   match '/signup', :to => 'pages#signup'
 
-  root :to => 'pages#home'
+  root :to => 'home#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
