@@ -6,6 +6,8 @@ gem 'rails', '3.1.3'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'activerecord-postgresql-adapter'
+
 
 group :development do
   gem 'rspec-rails', '2.6.1'
