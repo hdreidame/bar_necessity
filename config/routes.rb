@@ -4,9 +4,6 @@ BarNecessity::Application.routes.draw do
   match '/receipt', :to=> 'pages#receipt'
   match '/signup', :to => 'pages#signup'
 
-
-  match '/', :to => 'pages#home'
-
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
